@@ -27,6 +27,7 @@ body {
 
 .image-container img {
     height: 100%;
+    width: 300px;
     border-radius: 12px 0px 0px 12px;   
 }
 
@@ -36,6 +37,7 @@ body {
 }
 
 .details-container {
+
     padding: 32px;
 }
 
