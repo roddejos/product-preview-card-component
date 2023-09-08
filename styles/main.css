@@ -1,0 +1,134 @@
+body {
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: hsl(30, 38%, 92%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0em;
+
+    width: 600px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;   
+
+    box-shadow: #00000015 0px 5px 10px;
+}
+
+.image-container img {
+    height: 100%;
+    border-radius: 12px 0px 0px 12px;   
+}
+
+.img-mobile {
+    display: none;
+}
+
+.details-container {
+    padding: 32px;
+}
+
+.perfume-text {
+    letter-spacing: 0.5em;
+    font-size: 11px;
+    color: hsl(228, 12%, 48%);
+}
+
+.details-container h1 {
+    font-family: 'Fraunces', serif;
+    line-height: 1em;
+    
+    color: hsl(212, 21%, 14%);
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.7em;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 22px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.price-new {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 700;
+
+    color: hsl(158, 36%, 37%);
+}
+
+.price-old {
+    font-size: 13px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+
+    padding-left: 20px;
+}
+
+.btn-add {
+    height: 50px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    background-color: hsl(158, 36%, 37%);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn-add img{
+    padding-right: 12px;
+}
+
+@media (max-width: 390px) {
+    body {
+        display: flex;
+        align-items: normal;
+        padding: 8px;
+    }
+
+    .main-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+
+    .image-container img{
+        height: auto;
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+    
+}
